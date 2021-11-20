@@ -14,6 +14,10 @@
 		8DB8EA6A22860F1600A72EDE /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EA6922860F1600A72EDE /* OrdersTableViewController.swift */; };
 		8DB8EA6C22860F4000A72EDE /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EA6B22860F4000A72EDE /* AddOrderViewController.swift */; };
 		8DB8EA6F22871AB300A72EDE /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EA6E22871AB300A72EDE /* Webservice.swift */; };
+		8EA4823A27492CC00026C5BA /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA4823927492CC00026C5BA /* Order.swift */; };
+		8EA4823D27492F4E0026C5BA /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA4823C27492F4E0026C5BA /* OrderViewModel.swift */; };
+		8EA4823F274931F90026C5BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA4823E274931F90026C5BA /* ViewController.swift */; };
+		8EA48241274932E10026C5BA /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA48240274932E10026C5BA /* AddCoffeeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		8DB8EA6922860F1600A72EDE /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		8DB8EA6B22860F4000A72EDE /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 		8DB8EA6E22871AB300A72EDE /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		8EA4823927492CC00026C5BA /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		8EA4823C27492F4E0026C5BA /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		8EA4823E274931F90026C5BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EA48240274932E10026C5BA /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		8DB8EA5522860E2700A72EDE /* HotCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				8EA4823B27492F3A0026C5BA /* ViewModels */,
+				8EA4823827492CB40026C5BA /* Model */,
 				8DB8EA6D22871AA700A72EDE /* Services */,
 				8DB8EA6822860E5200A72EDE /* Controllers */,
 				8DB8EA5622860E2700A72EDE /* AppDelegate.swift */,
@@ -74,6 +84,7 @@
 			children = (
 				8DB8EA6922860F1600A72EDE /* OrdersTableViewController.swift */,
 				8DB8EA6B22860F4000A72EDE /* AddOrderViewController.swift */,
+				8EA4823E274931F90026C5BA /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -84,6 +95,23 @@
 				8DB8EA6E22871AB300A72EDE /* Webservice.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8EA4823827492CB40026C5BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EA4823927492CC00026C5BA /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EA4823B27492F3A0026C5BA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8EA4823C27492F4E0026C5BA /* OrderViewModel.swift */,
+				8EA48240274932E10026C5BA /* AddCoffeeOrderViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DB8EA6A22860F1600A72EDE /* OrdersTableViewController.swift in Sources */,
+				8EA48241274932E10026C5BA /* AddCoffeeOrderViewModel.swift in Sources */,
 				8DB8EA5722860E2700A72EDE /* AppDelegate.swift in Sources */,
+				8EA4823A27492CC00026C5BA /* Order.swift in Sources */,
+				8EA4823D27492F4E0026C5BA /* OrderViewModel.swift in Sources */,
+				8EA4823F274931F90026C5BA /* ViewController.swift in Sources */,
 				8DB8EA6F22871AB300A72EDE /* Webservice.swift in Sources */,
 				8DB8EA6C22860F4000A72EDE /* AddOrderViewController.swift in Sources */,
 			);
