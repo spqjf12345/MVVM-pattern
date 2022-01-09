@@ -1,5 +1,5 @@
 //
-//  SearcjMovieUseCase.swift
+//  MovieUseCase.swift
 //  MVVM-Structure
 //
 //  Created by JoSoJeong on 2022/01/09.
@@ -20,7 +20,7 @@ protocol MovieUseCaseType {
     func loadImage(for movie: Movie)
 
 }
-class SearchMovieUseCase: MovieUseCaseType {
+class MovieUseCase: MovieUseCaseType {
     
     private let moviesRepository: MovieRepository
     
@@ -34,7 +34,7 @@ class SearchMovieUseCase: MovieUseCaseType {
     }
     
     func movieDetails(with id: Int) -> AnyPublisher<Result<Movie, Error>, Error> {
-        
+        return moviesRepository.fetchDetailList(id: id)
     }
     
     func loadImage(for movie: Movie) {
